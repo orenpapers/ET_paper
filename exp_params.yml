@@ -1,0 +1,74 @@
+dummyMode : True
+run_calib : True
+
+et_rate : 1
+
+exp_params:
+  material_sentences_df_fn: /Users/orenkobo/Desktop/PhD/HebLingStudy/Task_Sentences/Materials/ET_ExpSentences_Semantic_Final.csv
+  #  material_sentences_df_fn : /Users/ExpRoom1/Documents/OrenKobo/Final_codes/HebLingStudy/Task_Sentences/Materials/ExpSentences.csv
+
+  exp_dir: /Users/orenkobo/Desktop/PhD/HebLingStudy
+  #  exp_dir : /Users/ExpRoom1/Documents/OrenKobo/Final_codes/HebLingStudy #PATH here
+  width: 1920
+  height: 1080
+  num_runs: 3
+
+
+Word_Probe_Task:
+  size: 30
+  opacity: 0.3
+  text_height: 30
+  wrapWidth: 1600
+  target_texts: [ k,d ]
+  x_tuple: [ -200,200 ]
+  y_pos: 0
+
+
+task_dir : /Users/orenkobo/Desktop/PhD/HebLingStudy/Task_DotProbe
+#  task_dir : /Users/ExpRoom1/Documents/OrenKobo/Final_codes/HebLingStudy/Task_DotProbe
+duos_csv_fn : word_probe_task_dous_AfterValencePreTest_selected_2506.csv
+
+instruction_fn : /Users/orenkobo/Desktop/PhD/HebLingStudy/Task_DotProbe/dotprobe_instructions.jpg
+#  instruction_fn : /Users/ExpRoom1/Documents/OrenKobo/Final_codes/HebLingStudy/Task_DotProbe/dotprobe_instructions.jpg
+
+iti_fixation_time : 0.75
+demo_csv: demo_word_probe_task_dous.csv
+duo_presentation_time: 0.5
+target_max_time_to_response : 1.5
+save_frame_ratio : 4
+limit_trials : 72
+
+
+Question:
+size : 30
+opacity : 0.3
+text_height : 30
+wrapWidth : 1600
+x_pos : -30
+y_pos : 0
+
+Sentences:
+  task_dir : /Users/orenkobo/Desktop/PhD/HebLingStudy/Task_Sentences #PATH here
+  #  task_dir : /Users/ExpRoom1/Documents/OrenKobo/Final_codes/HebLingStudy/Task_Sentences
+
+  demo_csv : /Users/orenkobo/Desktop/PhD/HebLingStudy/Task_Sentences/Materials/ExpSentencesDemo.csv
+  #  demo_csv : /Users/ExpRoom1/Documents/OrenKobo/Final_codes/HebLingStudy/Task_Sentences/Materials/ExpSentencesDemo.csv
+
+  #  instruction_fn : /Users/ExpRoom1/Documents/OrenKobo/Final_codes/HebLingStudy/Task_Sentences/Materials/sentences_instructions.jpg
+  instruction_fn : /Users/orenkobo/Desktop/PhD/HebLingStudy/Task_Sentences/Materials/sentences_instructions.jpg
+
+  num_trials : 1
+  num_trial_per_run : 32
+
+  size : 30
+  text_height : 30
+  opacity : 0.3
+  x_gap : 50
+  y_gap : 200
+  num_sets : 32
+  num_sen_types : 4
+  secs_per_sen : 99
+  comp_time_to_response : 99999
+  x_pos: -30
+  y_pos: 0
+  save_frame_ratio : 5
